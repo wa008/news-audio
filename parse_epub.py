@@ -41,25 +41,31 @@ def parse_epub(epub_path, text_file):
                 te_article_rubric += '. '
         else:
             te_article_rubric = None 
-        
-        for key in ['title', 'te_section_title', 'te_article_title', 'te_fly_span', \
-                    'te_article_datePublished', 'te_article_rubric']:
+        remove_classes = ['title', 'te_section_title', 'te_article_title', 'te_fly_span', \
+                    'te_article_datePublished', 'te_article_rubric']
+        # for i in range(20):
+        #     remove_classes.append(f"calibre{i}")
+        for key in remove_classes:
             for element in soup.find_all(class_=key):
                 element.decompose()
         for element in soup.find_all('head'):
             element.decompose()
+        # print(soup.prettify())
+        # sys.exit(0)
         text = soup.get_text()
         lines = (line.strip() for line in text.splitlines())
         chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
         text = ' '.join(chunk for chunk in chunks if chunk)
         text.strip().strip(".").strip().strip(".")
         
-        download_sufix = "This article was downloaded by zlibrary from"
+        download_sufix = "This article was downloaded by"
         if download_sufix in text and len(text.split(download_sufix)[1]) < 300:
             text = text.split(download_sufix)[0]
         ads_sufix = "To stay on top of the biggest stories in business and technology"
         if ads_sufix in text and len(text.split(ads_sufix)[1]) < 300:
             text = text.split(ads_sufix)[0]
+        text = ".".join([x for x in text.split(" | ") if len(x.strip()) > 100])
+
         if te_article_rubric: 
             text = te_article_rubric + text 
         return section_title, text

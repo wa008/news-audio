@@ -28,7 +28,7 @@ def download_latest_doc():
         print (f"\n\nChecking date: {i} days ago")
         date = datetime.now() - timedelta(days=i)
         formatted_date = date.strftime("%Y-%m-%d")
-        te_target_file = f"./the_economist/{formatted_date}_parse.txt"
+        te_target_file = f"./the_economist/{formatted_date}-parse.txt"
         # if target exist, continue 
         if os.path.exists(te_target_file):
             print(f"Target file found: {te_target_file}")
