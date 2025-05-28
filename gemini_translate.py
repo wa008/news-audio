@@ -1,18 +1,24 @@
-import re
-from parse_latest_date import parse_latest_date
-# python 
+import json 
+from google import genai
+from google.genai import types
 
 
-def main():
-    flag, input_file, output_file = parse_latest_date()
-    print (f"flag: {flag}")
-    print (f"input_file: {input_file}")
-    print (f"output_file: {output_file}")
-    if flag == False: 
-        return 
-    
+def translate_single(client, systemp_prompt, user_input):
+    response = client.models.generate_content(
+        model="gemini-2.0-flash",
+        config=types.GenerateContentConfig(
+            system_instruction=systemp_prompt),
+        contents=user_input
+    )
+    print(f"###{response.text}###")
 
 
+def translate_text(text_file, translated_file):
+    client = genai.Client(api_key="")
 
-if __name__ == "__main__":
-    main()
+    prompt = json.load(open('./prompt/translate.json', 'r', encoding='utf-8'))
+    user_input = prompt['user'].format(text = "This is a dog")
+    systemp_prompt = prompt['system']
+    print (f"user_input: {user_input}")
+    print (f"system_prompt: {systemp_prompt}")
+    translate_single(client, systemp_prompt, user_input)
