@@ -48,7 +48,7 @@ jobs:
           python -m pip install EbookLib beautifulsoup4 soundfile
           cd ..
           python -u ./entry_start.py ${{ secrets.GEMINI_API_KEY }}
-        timeout-minutes: 30
+        timeout-minutes: 360
 
       # - name: Commit report
       #   env:
