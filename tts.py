@@ -62,7 +62,7 @@ def text_to_audio(text, audio_path, index):
 def process_all_text_to_audio(datas, audio_path):
     mkdir_path(audio_path)
 
-    MAX_WORKERS = 100
+    MAX_WORKERS = 5
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_to_url = {executor.submit(text_to_audio, data, audio_path, index): index for index, data in enumerate(datas)}
         for future in concurrent.futures.as_completed(future_to_url):
