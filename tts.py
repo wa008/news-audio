@@ -8,9 +8,11 @@ model_path = "./fish-speech-1.5"
 
 def text_to_npy(text, npy_dir):
     script_path = "fish-speech/fish_speech/models/text2semantic/inference.py"
+    device = "cpu"
     args = [
         "--text", text,
         "--checkpoint-path", model_path,
+        "--device", device, 
         "--output-dir", npy_dir,
     ]
     command = ["python", script_path] + args
