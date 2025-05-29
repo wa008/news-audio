@@ -19,5 +19,13 @@
       <guid>https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3</guid>
     </item>
 
+    <item>
+      <title>Google drive audio example</title>
+      <description>Google drive audio example。</description>
+      <pubDate>Wed, 25 May 2025 23:59:00 PDT</pubDate>
+      <enclosure url="https://drive.google.com/file/d/16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P/uc?export=download" length="200000" type="audio/mpeg"/>
+      <guid>https://drive.google.com/file/d/16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P/uc?export=download</guid>
+    </item>
+
   </channel>
 </rss>
