@@ -32,9 +32,7 @@ jobs:
           sudo apt update 
           sudo apt install git-lfs
           git lfs install
-          git clone https://huggingface.co/fishaudio/fish-speech-1.5 ./fishaudio
-          ls fishaudio/
-          ls fishaudio/*/
+          git clone https://huggingface.co/fishaudio/fish-speech-1.5 ./fish-speech-1.5
           python -m pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1
           sudo apt install libsox-dev ffmpeg 
           sudo apt install build-essential \
