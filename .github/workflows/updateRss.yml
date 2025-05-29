@@ -45,6 +45,7 @@ jobs:
           cd ./fish-speech
           python -m pip install -e .[stable]
           python -m pip install -q -U google-genai
+          python -m pip install EbookLib
           cd ..
           python -u ./entry_start.py ${{ secrets.GEMINI_API_KEY }}
 
