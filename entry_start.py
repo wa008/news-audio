@@ -11,18 +11,18 @@ from merge_audio import merge_sorted_audio_files
 
 def main():
     api_key = sys.argv[1]
-    flag, epub_file, text_file = download_latest_doc()
-    # flag, epub_file, text_file = True, "./local_file.epub", "./the_economist/2025-05-24-parse.txt"
+    # flag, epub_file, text_file = download_latest_doc()
+    flag, epub_file, text_file = True, "./local_file.epub", "./the_economist/2025-05-24-parse.txt"
     print (f"flag: {flag}")
     print (f"epub_file: {epub_file}")
     print (f"text_file: {text_file}")
     if flag == False: 
         return 
 
-    parsed_content = parse_epub(epub_file, text_file)
+    # parsed_content = parse_epub(epub_file, text_file)
     
     translated_file = text_file.replace("parse", "translated")
-    translate_text(text_file, translated_file, api_key)
+    # translate_text(text_file, translated_file, api_key)
 
     datas = open(translated_file, 'r').read().split("\n\n" + "-" * 50 + "\n\n")
     audio_path = './temp_audio'
