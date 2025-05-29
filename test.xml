@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>我的播客</title>
+        <link>https://www.yourwebsite.com/podcast</link>
+        <description>这是一个关于...</description>
+        <language>zh-cn</language>
+        <itunes:image href="https://www.yourwebsite.com/podcast/cover.jpg" />
+        <itunes:author>你的名字</itunes:author>
+        <itunes:category text="教育">
+            <itunes:category text="科技" />
+        </itunes:category>
+
+        <item>
+            <title>第一集：播客入门</title>
+            <link>https://www.yourwebsite.com/podcast/episode1</link>
+            <description>这是我的播客第一集，讲解如何制作播客。</description>
+            <pubDate>Wed, 28 May 2025 23:14:12 PDT</pubDate>
+            <enclosure url="https://drive.google.com/uc?export=download&id=177RptSC0wviUcI41Bt8doONw2fS-PwZf" length="12345678" type="audio/mpeg" />
+            <guid>https://www.yourwebsite.com/podcast/episode1</guid>
+            <itunes:duration>1200</itunes:duration> <itunes:explicit>no</itunes:explicit>
+        </item>
+
+        <item>
+            <title>第二集：录音技巧</title>
+            <link>https://www.yourwebsite.com/podcast/episode2</link>
+            <description>本集分享一些录音技巧。</description>
+            <pubDate>Thu, 29 May 2025 23:14:12 PDT</pubDate>
+            <enclosure url="https://drive.google.com/uc?export=download&id=16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P" length="9876543" type="audio/mpeg" />
+            <guid>https://www.yourwebsite.com/podcast/episode2</guid>
+            <itunes:duration>900</itunes:duration>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+
+    </channel>
+</rss>
