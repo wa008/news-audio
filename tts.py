@@ -14,6 +14,8 @@ def text_to_npy(text, npy_dir):
         "--checkpoint-path", model_path,
         "--device", device, 
         "--output-dir", npy_dir,
+        "--half",
+        "--compile", 
     ]
     command = ["python", script_path] + args
     subprocess.run(command, check=True)
@@ -25,7 +27,9 @@ def npy_to_audio(npy_dir, output_file):
         "--input-path", npy_dir + "/codes_0.npy", 
         "--checkpoint-path", checkpoint_path,
         "--device", device,
-        "--output-path", output_file
+        "--output-path", output_file, 
+        "--compile", 
+        "--half",
     ]
     command = ["python", script_path] + args
     subprocess.run(command, check=True)
