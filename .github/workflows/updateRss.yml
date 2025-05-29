@@ -44,6 +44,7 @@ jobs:
           git clone https://github.com/fishaudio/fish-speech
           cd ./fish-speech
           python -m pip install -e .[stable]
+          python -m pip install -q -U google-genai
           cd ..
           python -u ./entry_start.py ${{ secrets.GEMINI_API_KEY }}
 
