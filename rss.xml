@@ -20,27 +20,35 @@
     </item>
 
     <item>
-      <title>Google drive audio example</title>
+      <title>Google drive 1_1</title>
       <description>Google drive audio example。</description>
       <pubDate>Wed, 25 May 2025 23:59:00 PDT</pubDate>
-      <enclosure url="https://drive.google.com/file/d/16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P/uc?export=download" length="200000" type="audio/mpeg"/>
-      <guid>https://drive.google.com/file/d/16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P/uc?export=download</guid>
+      <enclosure url="https://drive.google.com/uc?id=16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P&export=preview" length="200000" type="audio/mpeg"/>
+      <guid>https://drive.google.com/uc?id=16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P&export=preview</guid>
     </item>
 
     <item>
-      <title>Google Drive direct link</title>
+      <title>Google Drive 1_2</title>
       <description>Google drive audio example。</description>
       <pubDate>Wed, 20 May 2025 23:59:00 PDT</pubDate>
-      <enclosure url="https://gdirect.link/16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P" length="200000" type="audio/mpeg"/>
-      <guid>https://gdirect.link/16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P</guid>
+      <enclosure url="https://drive.usercontent.google.com/download?id=16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P&export=preview&authuser=0" length="200000" type="audio/mpeg"/>
+      <guid>https://drive.usercontent.google.com/download?id=16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P&export=preview&authuser=0</guid>
     </item>
 
     <item>
-      <title>Google Drive 3 link</title>
+      <title>Google Drive 2_1</title>
       <description>Google drive audio example。</description>
-      <pubDate>Wed, 20 May 2025 23:59:00 PDT</pubDate>
-      <enclosure url="https://gdurl.com/16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P" length="200000" type="audio/mpeg"/>
-      <guid>https://gdurl.com/16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P</guid>
+      <pubDate>Wed, 18 May 2025 23:59:00 PDT</pubDate>
+      <enclosure url="https://drive.google.com/uc?export=open&id=16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P" length="200000" type="audio/mpeg"/>
+      <guid>https://drive.google.com/uc?export=open&id=16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P</guid>
+    </item>
+      
+    <item>
+      <title>Google Drive 2_2</title>
+      <description>Google drive audio example。</description>
+      <pubDate>Wed, 17 May 2025 23:59:00 PDT</pubDate>
+      <enclosure url="https://drive.usercontent.google.com/download?id=16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P&export=open&authuser=0" length="200000" type="audio/mpeg"/>
+      <guid>https://drive.usercontent.google.com/download?id=16oR-ru-tpVa5J3oeQpJibUuqq3hlsR3P&export=open&authuser=0</guid>
     </item>
 
   </channel>
