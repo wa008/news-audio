@@ -2,15 +2,17 @@ import ebooklib
 from ebooklib import epub
 from bs4 import BeautifulSoup
 import sys 
+from utils import mkdir_path
+import os
 
-def parse_epub(epub_path, text_file):
+def parse_epub(epub_path, day):
     """
     Parses an EPUB file and returns a dictionary with chapter titles as keys
     and chapter content (plain text) as values.
 
     Args:
         epub_path (str): The path to the EPUB file.
-        text_file (str): The path to the text file where the content will be saved.
+        day (str): The path to the text file where the content will be saved.
 
     Returns:
         dict: A dictionary where keys are chapter titles and values are
@@ -18,9 +20,14 @@ def parse_epub(epub_path, text_file):
               Returns an empty dictionary if the EPUB cannot be processed
               or has no discernible chapters in the TOC.
     """
+    check_file = f"{day}/10001.txt"
+    if os.path.exists(check_file):
+        print(f"{check_file} exists.")
+        return None
+    else:
+        mkdir_path(f"{day}")
     book = epub.read_epub(epub_path)
     chapters_dict = {}
-
     # Helper function to clean HTML and extract text
     def get_text_from_html(html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
@@ -91,9 +98,10 @@ def parse_epub(epub_path, text_file):
 
     
     outputs = []
+    index = 10000
     for title, content in chapters_dict.items():
-        outputs.append(f"{title}\n\n{content}")
-    # Save the parsed content to a text file
-    with open(text_file, 'w', encoding='utf-8') as f:
-        f.write(("\n\n" + "-" * 50 + "\n\n").join(outputs))
+        index += 1
+        text_file = f"{day}/{index}-original.txt"
+        with open(text_file, 'w', encoding='utf-8') as f:
+            f.write(f"{title}\n\n{content}")
     return chapters_dict

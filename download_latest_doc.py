@@ -23,20 +23,19 @@ def check_and_download_file(url, destination_path):
     return False 
 
 def download_latest_doc():
-    # date from today to the last 365 days 
-    for i in range(365):
+    for i in range(60):
         print (f"\n\nChecking date: {i} days ago")
         date = datetime.now() - timedelta(days=i)
         formatted_date = date.strftime("%Y-%m-%d")
-        te_target_file = f"./the_economist/{formatted_date}-parse.txt"
-        # if target exist, continue 
-        if os.path.exists(te_target_file):
-            print(f"Target file found: {te_target_file}")
+        path = f"./the_economist/{formatted_date}"
+        done_file = f"{path}/done"
+        if os.path.exists(done_file): 
+            print (f"{done_file} exists")
             continue
         original_date = date.strftime("%Y.%m.%d")
-        local_file = "./local_file.epub"
-        # Example usage with your provided URL:
+        local_file = "./temp_epub.epub"
         file_url = f"https://raw.githubusercontent.com/hehonghui/awesome-english-ebooks/master/01_economist/te_{original_date}/TheEconomist.{original_date}.epub"
         if check_and_download_file(file_url, local_file):
-            return True, local_file, te_target_file
+            return True, formatted_date, local_file
     return False, None, None
+

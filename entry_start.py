@@ -13,25 +13,20 @@ from merge_audio import merge_sorted_audio_files
 
 def main():
     api_key = sys.argv[1]
-    # flag, epub_file, text_file = download_latest_doc()
-    flag, epub_file, text_file = True, "./local_file.epub", "./the_economist/2025-05-24-parse.txt"
+    # flag, day, epub_file = download_latest_doc()
+    flag, day, epub_file = True, "2025-05-24", "./temp_epub.epub"
     print (f"flag: {flag}")
     print (f"epub_file: {epub_file}")
-    print (f"text_file: {text_file}")
+    print (f"day: {day}")
     if flag == False: 
         return 
 
-    # parsed_content = parse_epub(epub_file, text_file)
+    parsed_content = parse_epub(epub_file, day)
     
-    translated_file = text_file.replace("parse", "translated")
-    # translate_text(text_file, translated_file, api_key)
+    res = translate_text(day, api_key)
+    if res == True: return 
 
-    datas = open(translated_file, 'r').read().split("\n\n" + "-" * 50 + "\n\n")
-    audio_path = './temp_audio'
-    fish_process_all_text_to_audio(datas, audio_path)
-
-    final_audio_file = "merged_audio_file.wav"
-    merge_sorted_audio_files(audio_path, final_audio_file)
+    fish_process_all_text_to_audio(day)
 
 if __name__ == "__main__":
     for i in range(1):

@@ -1,6 +1,7 @@
 import json 
 from google import genai
 from google.genai import types
+import os 
 
 def translate_single(client, systemp_prompt, user_input, max_attempts = 50):
     attempt_count = 0
@@ -24,23 +25,34 @@ def translate_single(client, systemp_prompt, user_input, max_attempts = 50):
             time.sleep(delay)
 
 
-def translate_text(text_file, translated_file, api_key):
+def translate_text(day, api_key):
     client = genai.Client(api_key=api_key)
     prompt = json.load(open('./prompt/translate.json', 'r', encoding='utf-8'))
     systemp_prompt = prompt['system']
 
-    datas = open(text_file, 'r', encoding='utf-8').read().split("\n\n" + "-" * 50 + "\n\n")
+    path = day
     outputs = []
-    for data in datas:
+    flag = False
+    for filename in os.listdir(path):
+        if not filename.endswith("original.txt"): continue
+        text_file = os.path.join(path, filename)
+        translated_file = text_file.replace("original", "translated")
+        if os.path.exists(translated_file):
+            print (f"{translated_file} exists")
+            continue
+
+        data = open(text_file, 'r', encoding='utf-8').read()
         title = data.split("\n")[0]
         content = "\n".join(data.split("\n")[1:]).strip("\n")
 
         user_input = prompt['user'].format(text = title)
         translated_title = translate_single(client, systemp_prompt, user_input)
+        translated_title = translated_title.replace("\n", ". ")
 
         user_input = prompt['user'].format(text = content)
         translated_content = translate_single(client, systemp_prompt, user_input)
-        outputs.append(f"{translated_title}\n{translated_content}")
-
-    with open(translated_file, 'w', encoding='utf-8') as f:
-        f.write(("\n\n" + "-" * 50 + "\n\n").join(outputs))
+        
+        flag = True
+        with open(translated_file, 'w', encoding='utf-8') as f:
+            f.write(f"{translated_title}\n\n{translated_content}")
+    return flag
