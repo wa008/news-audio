@@ -51,16 +51,16 @@ jobs:
           python -u ./entry_start.py ${{ secrets.GEMINI_API_KEY }}
         timeout-minutes: 3600
 
-      # - name: Commit report
-      #   env:
-      #       GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      #   run: |
-      #     git config --global user.name 'wa008'
-      #     git config --global user.email 'huzhipeng1024@outlook.com'
-      #     git remote set-url origin https://wa008:${{ secrets.ACCESS_TOKEN }}@github.com/wa008/zhblog.git
-      #     git checkout -b main
-      #     git branch
-      #     git add ./index.md
-      #     git add ./src/valid_rss.txt
-      #     git commit -m "github workflows auto update rss"
-      #     git push origin main
+      - name: Commit report
+        env:
+            GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        run: |
+          git config --global user.name 'wa008'
+          git config --global user.email 'zphu1024@fake.com'
+          git remote set-url origin https://wa008:${{ secrets.ACCESS_TOKEN }}@github.com/wa008/news-audio.git
+          git checkout -b main
+          git branch
+          git add ./rss.xml
+          git add ./the_economist/
+          git commit -m "github workflows auto update rss"
+          git push origin main
