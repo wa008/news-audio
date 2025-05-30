@@ -25,12 +25,11 @@ def translate_single(client, systemp_prompt, user_input, max_attempts = 50):
             time.sleep(delay)
 
 
-def translate_text(day, api_key):
+def translate_text(path, api_key):
     client = genai.Client(api_key=api_key)
     prompt = json.load(open('./prompt/translate.json', 'r', encoding='utf-8'))
     systemp_prompt = prompt['system']
 
-    path = day
     outputs = []
     flag = False
     for filename in sorted(os.listdir(path)):

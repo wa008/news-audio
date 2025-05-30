@@ -43,12 +43,11 @@ def text_to_audio(text, audio_file, index = 1):
     npy_to_audio(npy_dir, audio_file)
     return True
 
-def fish_process_all_text_to_audio(day):
-    path = day
+def fish_process_all_text_to_audio(path):
     flag = False
     for filename in sorted(os.listdir(path)):
         if not filename.endswith("translated.txt"): continue
-        translated_file = os.path.join(day, filename)
+        translated_file = os.path.join(path, filename)
         audio_file = translated_file.replace("translated.txt", "audio.wav")
         if os.path.exists(audio_file):
             print (f"{audio_file} exists")
@@ -58,18 +57,17 @@ def fish_process_all_text_to_audio(day):
         text_to_audio(text, audio_file)
         break
     if flag == False:
-        done_file = f"{day}/done"
+        done_file = f"{path}/done"
         with open(done_file, 'w') as f:
             pass
         print (f"Creat done file {done_file}")
 
 
-def fish_process_all_text_to_audio_backup(day):
-    path = day
+def fish_process_all_text_to_audio_backup(path):
     flag = False
     for filename in sorted(os.listdir(path)):
         if not filename.endswith("translated.txt"): continue
-        translated_file = os.path.join(day, filename)
+        translated_file = os.path.join(path, filename)
         audio_file = translated_file.replace("translated.txt", "audio.wav")
         if os.path.exists(audio_file):
             print (f"{audio_file} exists")
@@ -78,7 +76,7 @@ def fish_process_all_text_to_audio_backup(day):
         flag = True
         tts_one_file(text, audio_file)
     if flag == False:
-        done_file = f"{day}/done"
+        done_file = f"{path}/done"
         with open(done_file, 'w') as f:
             pass
         print (f"Creat done file {done_file}")

@@ -5,14 +5,14 @@ import sys
 from utils import mkdir_path
 import os
 
-def parse_epub(epub_path, day):
+def parse_epub(epub_path, path):
     """
     Parses an EPUB file and returns a dictionary with chapter titles as keys
     and chapter content (plain text) as values.
 
     Args:
         epub_path (str): The path to the EPUB file.
-        day (str): The path to the text file where the content will be saved.
+        path (str): The path to the text file where the content will be saved.
 
     Returns:
         dict: A dictionary where keys are chapter titles and values are
@@ -20,12 +20,12 @@ def parse_epub(epub_path, day):
               Returns an empty dictionary if the EPUB cannot be processed
               or has no discernible chapters in the TOC.
     """
-    check_file = f"{day}/10001-original.txt"
+    check_file = f"{path}/10001-original.txt"
     if os.path.exists(check_file):
         print(f"{check_file} exists.")
         return None
     else:
-        mkdir_path(f"{day}")
+        mkdir_path(f"{path}")
     book = epub.read_epub(epub_path)
     chapters_dict = {}
     # Helper function to clean HTML and extract text
@@ -101,7 +101,7 @@ def parse_epub(epub_path, day):
     index = 10000
     for title, content in chapters_dict.items():
         index += 1
-        text_file = f"{day}/{index}-original.txt"
+        text_file = f"{path}/{index}-original.txt"
         with open(text_file, 'w', encoding='utf-8') as f:
             f.write(f"{title}\n\n{content}")
     return chapters_dict
