@@ -10,7 +10,7 @@ import torchaudio
 
 def text_to_audio(text, audio_path, index):
     index += 10000
-    text = "在经历了11周的全面封锁后，在来自美国的压力下，以色列宣布将允许少量食品进入加沙。"
+    # text = "在经历了11周的全面封锁后，在来自美国的压力下，以色列宣布将允许少量食品进入加沙。"
     chat = ChatTTS.Chat()
     chat.load(compile=True, source="custom", custom_path="./ChatTTS", device = 'cpu')
 
@@ -66,4 +66,4 @@ def tts_one_file(text, audio_file):
                 print(f"[任务 {index}] 错误: {exc}")
     merge_sorted_audio_files(audio_path, audio_file)
 
-chattts_process_all_text_to_audio("the_economist/2025-05-24")
+# chattts_process_all_text_to_audio("the_economist/2025-05-24")
