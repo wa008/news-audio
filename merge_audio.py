@@ -27,7 +27,7 @@ def merge_sorted_audio_files(audio_folder, output_path):
             data, sr = sf.read(path)
             if sample_rate is None:
                 sample_rate = sr
-                silence_duration_seconds = 2
+                silence_duration_seconds = 0.2
                 silence_samples = int(silence_duration_seconds * sample_rate)
                 silence_data = np.zeros(silence_samples, dtype=np.float32)
             if sr != sample_rate:

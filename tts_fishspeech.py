@@ -30,13 +30,12 @@ def npy_to_audio(npy_dir, output_file):
         "--checkpoint-path", checkpoint_path,
         "--device", device,
         "--output-path", output_file, 
-        "--compile", 
         "--half",
     ]
     command = ["python", script_path] + args
     subprocess.run(command, check=True)
 
-def text_to_audio(text, audio_file, index):
+def text_to_audio(text, audio_file, index = 1):
     index += 10000
     npy_dir = f"./temp_npy_{index}"
     mkdir_path(npy_dir)
@@ -45,6 +44,26 @@ def text_to_audio(text, audio_file, index):
     return True
 
 def fish_process_all_text_to_audio(day):
+    path = day
+    flag = False
+    for filename in sorted(os.listdir(path)):
+        if not filename.endswith("translated.txt"): continue
+        translated_file = os.path.join(day, filename)
+        audio_file = translated_file.replace("translated.txt", "audio.wav")
+        if os.path.exists(audio_file):
+            print (f"{audio_file} exists")
+            continue
+        text = open(translated_file, 'r').read()
+        flag = True
+        text_to_audio(text, audio_file)
+    if flag == False:
+        done_file = f"{day}/done"
+        with open(done_file, 'w') as f:
+            pass
+        print (f"Creat done file {done_file}")
+
+
+def fish_process_all_text_to_audio_backup(day):
     path = day
     flag = False
     for filename in sorted(os.listdir(path)):

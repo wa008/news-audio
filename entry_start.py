@@ -23,7 +23,8 @@ def main():
 
     parsed_content = parse_epub(epub_file, day)
     
-    res = translate_text(day, api_key)
+    # res = translate_text(day, api_key)
+    res = False
     if res == True: return 
 
     fish_process_all_text_to_audio(day)
