@@ -20,7 +20,7 @@ def parse_epub(epub_path, day):
               Returns an empty dictionary if the EPUB cannot be processed
               or has no discernible chapters in the TOC.
     """
-    check_file = f"{day}/10001.txt"
+    check_file = f"{day}/10001-original.txt"
     if os.path.exists(check_file):
         print(f"{check_file} exists.")
         return None

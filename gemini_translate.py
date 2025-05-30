@@ -33,7 +33,7 @@ def translate_text(day, api_key):
     path = day
     outputs = []
     flag = False
-    for filename in os.listdir(path):
+    for filename in sorted(os.listdir(path)):
         if not filename.endswith("original.txt"): continue
         text_file = os.path.join(path, filename)
         translated_file = text_file.replace("original", "translated")
