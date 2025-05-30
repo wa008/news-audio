@@ -2,6 +2,7 @@ import json
 from google import genai
 from google.genai import types
 import os 
+import time 
 
 def translate_single(client, systemp_prompt, user_input, max_attempts = 50):
     attempt_count = 0
