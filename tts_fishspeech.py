@@ -16,11 +16,11 @@ def text_to_npy(text, npy_dir):
         "--checkpoint-path", model_path,
         "--device", device, 
         "--output-dir", npy_dir,
-        "--half",
         "--compile", 
     ]
     command = ["python", script_path] + args
     subprocess.run(command, check=True)
+    print (f"text_to_npy sucessful!!")
 
 def npy_to_audio(npy_dir, output_file):
     script_path = "fish-speech/fish_speech/models/vqgan/inference.py"
@@ -30,10 +30,10 @@ def npy_to_audio(npy_dir, output_file):
         "--checkpoint-path", checkpoint_path,
         "--device", device,
         "--output-path", output_file, 
-        "--half",
     ]
     command = ["python", script_path] + args
     subprocess.run(command, check=True)
+    print (f"npy_to_audio sucessful!!")
 
 def text_to_audio(text, audio_file, index = 1):
     index += 10000
@@ -56,6 +56,7 @@ def fish_process_all_text_to_audio(day):
         text = open(translated_file, 'r').read()
         flag = True
         text_to_audio(text, audio_file)
+        break
     if flag == False:
         done_file = f"{day}/done"
         with open(done_file, 'w') as f:
