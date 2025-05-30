@@ -8,7 +8,9 @@ import os
 from utils import mkdir_path
 from tts_fishspeech import fish_process_all_text_to_audio
 from tts_gemini import gemini_process_all_text_to_audio # Doesn't support till now, to finish
+from tts_chatts import chattts_process_all_text_to_audio
 from merge_audio import merge_sorted_audio_files
+from generate_rss_xml import create_rss_feed
 # python 
 
 def main():
@@ -28,7 +30,10 @@ def main():
     res = False
     if res == True: return 
 
-    fish_process_all_text_to_audio(path)
+    chattts_process_all_text_to_audio(path)
+
+    # auto generate rss.xml 
+    create_rss_feed(path, "rss.xml")
 
 if __name__ == "__main__":
     for i in range(1):
