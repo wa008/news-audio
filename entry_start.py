@@ -7,7 +7,7 @@ import subprocess
 import os
 from utils import mkdir_path
 from tts_fishspeech import fish_process_all_text_to_audio
-from tts_gemini import gemini_process_all_text_to_audio
+from tts_gemini import gemini_process_all_text_to_audio # Doesn't support till now, to finish
 from merge_audio import merge_sorted_audio_files
 # python 
 
