@@ -5,7 +5,9 @@ from parse_epub import parse_epub
 import sys 
 import subprocess
 import os
-from tts import text_to_audio, mkdir_path, process_all_text_to_audio
+from utils import mkdir_path
+from tts_fishspeech import fish_process_all_text_to_audio
+from tts_gemini import gemini_process_all_text_to_audio
 from merge_audio import merge_sorted_audio_files
 # python 
 
@@ -26,7 +28,7 @@ def main():
 
     datas = open(translated_file, 'r').read().split("\n\n" + "-" * 50 + "\n\n")
     audio_path = './temp_audio'
-    process_all_text_to_audio(datas, audio_path)
+    fish_process_all_text_to_audio(datas, audio_path)
 
     final_audio_file = "merged_audio_file.wav"
     merge_sorted_audio_files(audio_path, final_audio_file)

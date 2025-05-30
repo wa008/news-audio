@@ -2,6 +2,7 @@ import subprocess
 import os
 import shutil
 import concurrent.futures
+from utils import mkdir_path
 
 checkpoint_path = "./fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth"
 model_path = "./fish-speech-1.5"
@@ -34,28 +35,6 @@ def npy_to_audio(npy_dir, output_file):
     command = ["python", script_path] + args
     subprocess.run(command, check=True)
 
-def mkdir_path(directory_path):
-    # Check if the path exists and is a directory
-    if os.path.isdir(directory_path):
-        try:
-            # ⚠️ Be very careful with shutil.rmtree()!
-            # confirm = input(f"Are you absolutely sure you want to delete '{directory_path}' and all its contents? (yes/no): ")
-            # if confirm.lower() == 'yes':
-            shutil.rmtree(directory_path)
-            print(f"Directory '{directory_path}' and its contents removed successfully.")
-            # else:
-            #     print("Deletion cancelled.")
-        except OSError as e:
-            print(f"Error removing directory '{directory_path}': {e.strerror}")
-            print("This could be due to permission issues or files being in use.")
-    elif os.path.exists(directory_path):
-        # Path exists but is not a directory (it's a file)
-        os.remove(file_path)
-        print(f"Error: '{directory_path}' exists but is a file, not a directory. `shutil.rmtree` is for directories.")
-    else:
-        print(f"Directory '{directory_path}' does not exist.")
-    os.mkdir(directory_path)
-
 def text_to_audio(text, audio_path, index):
     index += 10000
     npy_dir = f"./temp_npy_{index}"
@@ -65,7 +44,7 @@ def text_to_audio(text, audio_path, index):
     npy_to_audio(npy_dir, audio_file)
     return True
 
-def process_all_text_to_audio(datas, audio_path):
+def fish_process_all_text_to_audio(datas, audio_path):
     mkdir_path(audio_path)
 
     MAX_WORKERS = 3
