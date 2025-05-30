@@ -21,7 +21,7 @@ def main():
     if flag == False: 
         return 
     
-    path = f"{the_economist}/{day}"
+    path = f"the_economist/{day}"
     parsed_content = parse_epub(epub_file, path)
     
     res = translate_text(path, api_key)
