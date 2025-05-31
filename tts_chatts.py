@@ -15,8 +15,11 @@ def text_to_audio(text, audio_path, index):
     chat.load(compile=True, source="custom", custom_path="./ChatTTS", device = torch.device('cpu'))
     # rand_spk = chat.sample_random_speaker()
     spk = torch.load("./seed_1397_restored_emb.pt", map_location=torch.device('cpu'))
+    if spk is None:
+        print(f"[ERROR] spk is None for index {index}")
+        return
     params_infer_code = ChatTTS.Chat.InferCodeParams(
-        spk_emb = spk, # add sampled speaker 
+        spk_emb = spk, # add sampled speaker
         temperature = 0.3,   # using custom temperature
         top_P = 0.7,        # top P decode
         top_K = 20,         # top K decode
@@ -26,7 +29,13 @@ def text_to_audio(text, audio_path, index):
     )
 
     # text = "在经历了11周的全面封锁后，在来自美国的压力下，以色列宣布将允许少量食品进入加沙。"
+    print (f"text: {text}")
     wavs = chat.infer(text, skip_refine_text=True, params_refine_text=params_refine_text, params_infer_code=params_infer_code)
+    if not isinstance(wavs, list):
+        wavs = [wavs]
+    if wavs is None or wavs[0] is None:
+        print(f"[ERROR] wavs is None for index {index}")
+        return
     audio_file = f"{audio_path}/{index}.wav"
     torchaudio.save(audio_file, torch.from_numpy(wavs[0]).unsqueeze(0), 24000)
 
