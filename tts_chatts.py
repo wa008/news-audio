@@ -76,14 +76,15 @@ def tts_one_file(text, audio_file):
     audio_path = "./temp_audio"
     mkdir_path(audio_path)
 
-    chunk_size = 200
+    chunk_size = 50
     res = [datas[0]]
     for i, data in enumerate(datas):
         if i == 0: continue
         if len(data) > chunk_size:
             tmp = data.split("。")
-            cur = ""
+            cur = tmp[0] + "。"
             for ind, val in enumerate(tmp):
+                if ind == 0: continue
                 if len(val) <= 2: continue
                 if len(cur) + len(val) < chunk_size:
                     cur += val + "。"
@@ -97,7 +98,7 @@ def tts_one_file(text, audio_file):
     datas = res 
     print (f"count: {len(datas)}")
 
-    MAX_WORKERS = 2
+    MAX_WORKERS = 1
     with concurrent.futures.ProcessPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_to_url = {executor.submit(text_to_audio, data, audio_path, index): index for index, data in enumerate(datas)}
         for future in concurrent.futures.as_completed(future_to_url):
