@@ -48,6 +48,7 @@ jobs:
           # cd ..
           python -m pip install -q -U google-genai
           python -m pip install EbookLib beautifulsoup4 soundfile ChatTTS
+          ls ./ChatTTS
           python -u ./entry_start.py ${{ secrets.GEMINI_API_KEY_NEWS_AUDIO }}
         timeout-minutes: 3600
 
