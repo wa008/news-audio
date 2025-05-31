@@ -14,7 +14,7 @@ def text_to_audio(text, audio_path, index):
     chat = ChatTTS.Chat()
     chat.load(compile=True, source="custom", custom_path="./ChatTTS", device = 'cpu')
 
-    rand_spk = chat.sample_random_speaker()
+    # rand_spk = chat.sample_random_speaker()
     spk = torch.load("./seed_1397_restored_emb.pt", map_location=torch.device('cpu'))
     params_infer_code = ChatTTS.Chat.InferCodeParams(
         spk_emb = spk, # add sampled speaker 
