@@ -13,7 +13,8 @@ def text_to_audio(text, audio_path, index):
     index += 10000
     
     chat = ChatTTS.Chat()
-    chat.load(compile=True, source="custom", custom_path="./ChatTTS", device = torch.device('cpu'))
+    print (f"text1.5: {text}")
+    chat.load(compile=True, source="custom", custom_path="./ChatTTS", device = 'cpu')
     print (f"chat: {type(chat)}")
     # rand_spk = chat.sample_random_speaker()
     spk = torch.load("./seed_1397_restored_emb.pt", map_location=torch.device('cpu'))
