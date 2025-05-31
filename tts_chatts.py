@@ -28,7 +28,7 @@ def text_to_audio(text, audio_path, index):
     # text = "在经历了11周的全面封锁后，在来自美国的压力下，以色列宣布将允许少量食品进入加沙。"
     wavs = chat.infer(text, skip_refine_text=True, params_refine_text=params_refine_text, params_infer_code=params_infer_code)
     audio_file = f"{audio_path}/{index}.wav"
-    torchaudio.save(audio_file, torch.from_numpy(wavs[0]).unsqueeze(0), 24000)
+    # torchaudio.save(audio_file, torch.from_numpy(wavs[0]).unsqueeze(0), 24000)
 
 def chattts_process_all_text_to_audio(path):
     flag = False
