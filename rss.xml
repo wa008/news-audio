@@ -5,14 +5,6 @@
     <link>https://wa008.github.io/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 31 May 2025 01:45:07 -0000</lastBuildDate>
-    <item>
-      <title>本周世界 - 商业</title>
-      <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-24/10002-audio.wav</link>
-      <description>本周世界 - 商业</description>
-      <pubDate>Sat, 31 May 2025 09:38:13 -0000</pubDate>
-      <guid isPermaLink="true">https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-24/10002-audio.wav</guid>
-      <enclosure url="https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-24/10002-audio.wav" length="10772696" type="audio/mpeg" />
-    </item>
+    <lastBuildDate>Sat, 31 May 2025 01:58:17 -0000</lastBuildDate>
   </channel>
 </rss>
