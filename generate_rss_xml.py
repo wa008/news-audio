@@ -84,7 +84,7 @@ def create_rss_feed(SOURCE_DIRECTORY_NAME, RSS_OUTPUT_FILE):
         ET.SubElement(item_element, "title").text = item_description
         ET.SubElement(item_element, "link").text = file_link # Can be the audio file link or a related webpage link
         ET.SubElement(item_element, "description").text = item_description
-        ET.SubElement(item_element, "pubDate").text = pub_date
+        # ET.SubElement(item_element, "pubDate").text = pub_date
         ET.SubElement(item_element, "guid", isPermaLink="true").text = file_link # GUID is usually a permalink
 
         # Add <enclosure> tag, used by podcast clients to identify the audio file
