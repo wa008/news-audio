@@ -1,31 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-    xmlns:itunes="http://www.itunes.com/DTDs/Podcast-1.0.dtd"
-    xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
-    <title>我的简单播客</title>
-    <link>http://example.com/podcast.xml</link>
-    <description>这是一个只有一个音频内容的简单播客。</description>
+    <title>中文外刊</title>
+    <link>https://wa008.github.io/news-audio/rss.xml</link>
+    <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <pubDate>Wed, 28 May 2025 23:59:00 PDT</pubDate>
-    <lastBuildDate>Wed, 28 May 2025 23:59:00 PDT</lastBuildDate>
-    <ttl>60</ttl>
-
+    <lastBuildDate>Sat, 31 May 2025 00:49:21 -0000</lastBuildDate>
     <item>
-      <title>我的第一个音频</title>
-      <description>这是我的第一个也是唯一一个音频内容。</description>
-      <pubDate>Wed, 28 May 2025 23:59:00 PDT</pubDate>
-      <enclosure url="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" length="100000" type="audio/mpeg"/>
-      <guid>https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3</guid>
+      <title>本周要闻 - 政治</title>
+      <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-24/10001-audio.wav</link>
+      <description>本周要闻 - 政治</description>
+      <pubDate>Fri, 30 May 2025 21:00:54 -0000</pubDate>
+      <guid isPermaLink="true">https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-24/10001-audio.wav</guid>
+      <enclosure url="https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-24/10001-audio.wav" length="41988140" type="audio/mpeg" />
     </item>
-
-    <item>
-      <title>github raw wav file</title>
-      <description>Google drive audio example。</description>
-      <pubDate>Wed, 25 May 2025 23:59:00 PDT</pubDate>
-      <enclosure url="https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-24/10001-audio.wav" length="200000" type="audio/mpeg"/>
-      <guid>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-24/10001-audio.wav</guid>
-    </item>
-
   </channel>
 </rss>
