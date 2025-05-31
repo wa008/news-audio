@@ -23,7 +23,7 @@ def check_and_download_file(url, destination_path):
     return False 
 
 def download_latest_doc():
-    for i in range(30):
+    for i in range(10):
         print (f"\n\nChecking date: {i} days ago")
         date = datetime.now() - timedelta(days=i)
         formatted_date = date.strftime("%Y-%m-%d")
