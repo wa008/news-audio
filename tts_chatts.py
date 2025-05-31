@@ -6,9 +6,25 @@ from utils import mkdir_path
 from merge_audio import merge_sorted_audio_files
 import torch
 import torchaudio
+import ChatTTS
 
-def text_to_audio(chat, params_infer_code, params_refine_text, text, audio_path, index):
+def text_to_audio(text, audio_path, index):
     index += 10000
+    chat = ChatTTS.Chat()
+    chat.load(compile=True, source="custom", custom_path="./ChatTTS", device = 'cpu')
+
+    # rand_spk = chat.sample_random_speaker()
+    spk = torch.load("./seed_1397_restored_emb.pt", map_location=torch.device('cpu'))
+    params_infer_code = ChatTTS.Chat.InferCodeParams(
+        spk_emb = spk, # add sampled speaker 
+        temperature = 0.3,   # using custom temperature
+        top_P = 0.7,        # top P decode
+        top_K = 20,         # top K decode
+    )
+    params_refine_text = ChatTTS.Chat.RefineTextParams(
+        prompt='[oral_2][laugh_0][break_6]',
+    )
+
     # text = "在经历了11周的全面封锁后，在来自美国的压力下，以色列宣布将允许少量食品进入加沙。"
     wavs = chat.infer(text, skip_refine_text=True, params_refine_text=params_refine_text, params_infer_code=params_infer_code)
     audio_file = f"{audio_path}/{index}.wav"
@@ -41,7 +57,7 @@ def tts_one_file(text, audio_file):
     audio_path = "./temp_audio"
     mkdir_path(audio_path)
     
-    chrunk_size = 200
+    chrunk_size = 50
     res = [datas[0]]
     for i, data in enumerate(datas):
         if i == 0: continue
@@ -62,34 +78,19 @@ def tts_one_file(text, audio_file):
     datas = res 
     print (f"count: {len(datas)}")
     # print (f"datas: {datas}")
-
     # return 
+
     MAX_WORKERS = 1
-
-    import ChatTTS
-    chat = ChatTTS.Chat()
-    chat.load(compile=True, source="custom", custom_path="./ChatTTS", device = 'cpu')
-
-    # rand_spk = chat.sample_random_speaker()
-    spk = torch.load("./seed_1397_restored_emb.pt", map_location=torch.device('cpu'))
-    params_infer_code = ChatTTS.Chat.InferCodeParams(
-        spk_emb = spk, # add sampled speaker 
-        temperature = 0.3,   # using custom temperature
-        top_P = 0.7,        # top P decode
-        top_K = 20,         # top K decode
-    )
-    params_refine_text = ChatTTS.Chat.RefineTextParams(
-        prompt='[oral_2][laugh_0][break_6]',
-    )
-
+    
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        future_to_url = {executor.submit(text_to_audio, chat, params_infer_code, params_refine_text, data, audio_path, index): index for index, data in enumerate(datas)}
+        future_to_url = {executor.submit(text_to_audio, data, audio_path, index): index for index, data in enumerate(datas)}
         for future in concurrent.futures.as_completed(future_to_url):
             index = future_to_url[future]
             try:
                 result = future.result() # 获取任务执行结果
             except Exception as exc:
-                print(f"[任务 {index}] 错误: {exc}")
+                print(f"[task {index}] error: {exc}")
     merge_sorted_audio_files(audio_path, audio_file)
 
-# chattts_process_all_text_to_audio("the_economist/2025-05-24")
+if __name__ == "__main__":
+    chattts_process_all_text_to_audio("the_economist/2025-05-24")

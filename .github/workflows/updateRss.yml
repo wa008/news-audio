@@ -60,6 +60,7 @@ jobs:
           git remote set-url origin https://wa008:${{ secrets.ACCESS_TOKEN }}@github.com/wa008/news-audio.git
           git checkout -b main
           git branch
+          git pull
           git add ./rss.xml
           git add ./the_economist/
           git commit -m "github workflows auto update rss"
