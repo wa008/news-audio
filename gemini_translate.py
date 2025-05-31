@@ -55,5 +55,4 @@ def translate_text(path, api_key):
         flag = True
         with open(translated_file, 'w', encoding='utf-8') as f:
             f.write(f"{translated_title}\n\n{translated_content}")
-        break 
     return flag
