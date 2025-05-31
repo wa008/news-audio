@@ -14,7 +14,7 @@ def text_to_audio(text, audio_path, index):
     
     chat = ChatTTS.Chat()
     print (f"text1.5: {text}")
-    chat.load(compile=True)
+    chat.load(compile=False, device = 'cpu')
     # chat.load(compile=True, source="custom", custom_path="./ChatTTS", device = 'cpu')
     print (f"chat: {type(chat)}")
     # rand_spk = chat.sample_random_speaker()
