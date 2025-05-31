@@ -27,7 +27,6 @@ def main():
     parsed_content = parse_epub(epub_file, path)
     
     res = translate_text(path, api_key)
-    res = False
     if res == True: return 
 
     chattts_process_all_text_to_audio(path)
