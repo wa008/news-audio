@@ -9,12 +9,15 @@ import torchaudio
 import ChatTTS
 
 def text_to_audio(text, audio_path, index):
+    print (f"text1: {text}")
     index += 10000
-
+    
     chat = ChatTTS.Chat()
     chat.load(compile=True, source="custom", custom_path="./ChatTTS", device = torch.device('cpu'))
+    print (f"chat: {type(chat)}")
     # rand_spk = chat.sample_random_speaker()
     spk = torch.load("./seed_1397_restored_emb.pt", map_location=torch.device('cpu'))
+    print (f"spk: {type(spk)}")
     if spk is None:
         print(f"[ERROR] spk is None for index {index}")
         return
@@ -24,12 +27,13 @@ def text_to_audio(text, audio_path, index):
         top_P = 0.7,        # top P decode
         top_K = 20,         # top K decode
     )
+    print (f"params_infer_code: {type(params_infer_code)}")
     params_refine_text = ChatTTS.Chat.RefineTextParams(
         prompt='[oral_2][laugh_0][break_6]',
     )
 
     # text = "在经历了11周的全面封锁后，在来自美国的压力下，以色列宣布将允许少量食品进入加沙。"
-    print (f"text: {text}")
+    print (f"text2: {text}")
     wavs = chat.infer(text, skip_refine_text=True, params_refine_text=params_refine_text, params_infer_code=params_infer_code)
     if not isinstance(wavs, list):
         wavs = [wavs]
@@ -38,6 +42,7 @@ def text_to_audio(text, audio_path, index):
         return
     audio_file = f"{audio_path}/{index}.wav"
     torchaudio.save(audio_file, torch.from_numpy(wavs[0]).unsqueeze(0), 24000)
+
 
 def chattts_process_all_text_to_audio(path):
     flag = False
