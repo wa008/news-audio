@@ -41,7 +41,12 @@ def chattts_process_all_text_to_audio(path):
             continue
         text = open(translated_file, 'r').read()
         flag = True
-        tts_one_file(text, audio_file)
+        # tts_one_file(text, audio_file)
+        audio_path = "/".join(audio_file.split("/")[:-1])
+        index = int(audio_file.split("/")[-1].split("-")[0]) - 10000
+        print (audio_path, index)
+        text = "This is a dog"
+        text_to_audio(text, audio_path, index)
         break
     if flag == False:
         done_file = f"{path}/done"
