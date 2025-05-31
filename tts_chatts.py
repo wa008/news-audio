@@ -10,9 +10,9 @@ import ChatTTS
 
 def text_to_audio(text, audio_path, index):
     index += 10000
-    chat = ChatTTS.Chat()
-    chat.load(compile=True, source="custom", custom_path="./ChatTTS", device = 'cpu')
 
+    chat = ChatTTS.Chat()
+    chat.load(compile=True, source="custom", custom_path="./ChatTTS", device = torch.device('cpu'))
     # rand_spk = chat.sample_random_speaker()
     spk = torch.load("./seed_1397_restored_emb.pt", map_location=torch.device('cpu'))
     params_infer_code = ChatTTS.Chat.InferCodeParams(
@@ -56,17 +56,17 @@ def tts_one_file(text, audio_file):
     datas = [x for x in datas if len(x) > 3]
     audio_path = "./temp_audio"
     mkdir_path(audio_path)
-    
-    chrunk_size = 50
+
+    chunk_size = 200
     res = [datas[0]]
     for i, data in enumerate(datas):
         if i == 0: continue
-        if len(data) > chrunk_size:
+        if len(data) > chunk_size:
             tmp = data.split("。")
             cur = ""
             for ind, val in enumerate(tmp):
                 if len(val) <= 2: continue
-                if len(cur) + len(val) < chrunk_size:
+                if len(cur) + len(val) < chunk_size:
                     cur += val + "。"
                 else:
                     res.append(cur.strip())
@@ -77,19 +77,17 @@ def tts_one_file(text, audio_file):
             res.append(data)
     datas = res 
     print (f"count: {len(datas)}")
-    # print (f"datas: {datas}")
-    # return 
 
-    MAX_WORKERS = 1
-    
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+    MAX_WORKERS = 2
+    with concurrent.futures.ProcessPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_to_url = {executor.submit(text_to_audio, data, audio_path, index): index for index, data in enumerate(datas)}
         for future in concurrent.futures.as_completed(future_to_url):
             index = future_to_url[future]
             try:
-                result = future.result() # 获取任务执行结果
+                result = future.result()
             except Exception as exc:
                 print(f"[task {index}] error: {exc}")
+
     merge_sorted_audio_files(audio_path, audio_file)
 
 if __name__ == "__main__":
