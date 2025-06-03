@@ -5,7 +5,14 @@
     <link>https://wa008.github.io/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 03 Jun 2025 09:53:09 -0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jun 2025 10:07:29 -0000</lastBuildDate>
+    <item>
+      <title>美国 - 对美国学位的需求正在下降</title>
+      <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10013-audio.wav</link>
+      <description>美国 - 对美国学位的需求正在下降</description>
+      <guid isPermaLink="true">https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10013-audio.wav</guid>
+      <enclosure url="https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10013-audio.wav" length="9953590" type="audio/mpeg" />
+    </item>
     <item>
       <title>美国找到了一个新的杠杆，可以向外国人榨取现金</title>
       <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10012-audio.wav</link>
