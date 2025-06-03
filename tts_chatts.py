@@ -84,7 +84,7 @@ def tts_one_file(text, audio_file):
     audio_path = "./temp_audio"
     mkdir_path(audio_path)
 
-    chunk_size = 50
+    chunk_size = 200
     res = [datas[0]]
     for i, data in enumerate(datas):
         if i == 0: continue
