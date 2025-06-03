@@ -10,8 +10,8 @@ import ChatTTS
 import traceback
 
 def text_to_audio(text, audio_path, index):
+    print (f"process text: {text}")
     index += 10000
-    
     chat = ChatTTS.Chat()
     chat.load(compile=True, source="custom", custom_path="./ChatTTS-model", device = 'cpu')
     spk = torch.load("./seed_1397_restored_emb.pt", map_location=torch.device('cpu'))
@@ -26,7 +26,6 @@ def text_to_audio(text, audio_path, index):
     )
 
     torch.manual_seed(42) # text seed 
-    # text = "在经历了11周的全面封锁后，在来自美国的压力下，以色列宣布将允许少量食品进入加沙。"
     wavs = chat.infer(text, skip_refine_text=True, params_refine_text=params_refine_text, params_infer_code=params_infer_code)
     if not isinstance(wavs, list):
         wavs = [wavs]
