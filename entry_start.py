@@ -29,8 +29,8 @@ def main():
     res = translate_text(path, api_key)
     if res == True: return 
 
-    chattts_process_all_text_to_audio(path)
-    # gemini_process_all_text_to_audio(path, api_key)
+    # chattts_process_all_text_to_audio(path)
+    gemini_process_all_text_to_audio(path, api_key)
 
     # auto generate rss.xml 
     create_rss_feed("the_economist", "rss.xml")
