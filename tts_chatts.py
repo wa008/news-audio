@@ -20,12 +20,12 @@ def text_to_audio(text, audio_path, index):
         temperature = 0.3,   # using custom temperature
         top_P = 0.7,        # top P decode
         top_K = 20,         # top K decode
+        manual_seed = 42, 
     )
     params_refine_text = ChatTTS.Chat.RefineTextParams(
         prompt='[oral_2][laugh_0][break_6]',
     )
 
-    torch.manual_seed(42) # text seed 
     wavs = chat.infer(text, skip_refine_text=True, params_refine_text=params_refine_text, params_infer_code=params_infer_code)
     if not isinstance(wavs, list):
         wavs = [wavs]
