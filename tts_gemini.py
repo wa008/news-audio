@@ -40,7 +40,6 @@ def gemini_tts(client, user_input, output_file, max_attempts = 1):
             )
             time.sleep(delay)
 
-
 def gemini_process_all_text_to_audio(datas, audio_path, api_key = 'default'):
     mkdir_path(audio_path)
     client = genai.Client(api_key = api_key)
