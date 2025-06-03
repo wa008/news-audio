@@ -32,25 +32,21 @@ def create_rss_feed(SOURCE_DIRECTORY_NAME, RSS_OUTPUT_FILE):
 
     # 3. Find all .wav files and sort them by modification time in descending order
     wav_files = []
-    for wav_path in source_dir.glob("*.wav"):
-        try:
-            mtime = wav_path.stat().st_mtime
-            wav_files.append((wav_path, mtime))
-        except FileNotFoundError:
-            print(f"Warning: File {wav_path} not found while getting status, skipped.")
-            continue
+    for root, dirs, files in os.walk(SOURCE_DIRECTORY_NAME):
+        for filename in files:
+            if not filename.endswith(".wav"): continue
+            filepath = os.path.join(root, filename)
+            wav_files.append(Path(filepath))
 
     # Sort by modification time in descending order (newest first)
-    wav_files.sort(key=lambda item: item[1], reverse=True)
-
+    wav_files.sort(key=lambda p: p.resolve(), reverse=True) # PosixPath
 
     # 4. Create an <item> element for each .wav file
-    for wav_path, mtime in wav_files:
-        base_name = wav_path.stem
+    for wav_path in wav_files:
         txt_path = os.path.join(SOURCE_DIRECTORY_NAME, wav_path.name.replace("audio.wav", "translated.txt"))
 
         # Get description (first line of the .txt file)
-        item_description = f"Audio: {base_name}" # Default description
+        item_description = f"Audio: {wav_path}" # Default description
         print (txt_path)
         if os.path.exists(txt_path):
             try:
@@ -63,10 +59,6 @@ def create_rss_feed(SOURCE_DIRECTORY_NAME, RSS_OUTPUT_FILE):
         else:
             print(f"Info: Description file '{txt_path}' not found, using default description.")
         item_description = item_description.strip().strip('.').strip('。')
-
-        pub_date = formatdate(
-            float(mtime) + 3600 * 8.0
-        )
 
         # Construct file link
         # Link structure: URL_PREFIX + directory_name + / + file_name
@@ -112,6 +104,6 @@ if __name__ == "__main__":
     # or that SOURCE_DIRECTORY_NAME is an absolute path or a correct relative path.
     # For example, if the script is at the same level as the 'the_economist' directory,
     # the current setting is correct.
-    SOURCE_DIRECTORY_NAME = "the_economist/2025-05-24" # Name of the directory containing audio files
+    SOURCE_DIRECTORY_NAME = "the_economist" # Name of the directory containing audio files
     RSS_OUTPUT_FILE = "rss.xml"
     create_rss_feed(SOURCE_DIRECTORY_NAME, RSS_OUTPUT_FILE)
