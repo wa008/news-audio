@@ -5,7 +5,14 @@
     <link>https://wa008.github.io/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 03 Jun 2025 07:42:39 -0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jun 2025 08:13:17 -0000</lastBuildDate>
+    <item>
+      <title>信件 - 欧洲是否存在言论自由问题？</title>
+      <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10008-audio.wav</link>
+      <description>信件 - 欧洲是否存在言论自由问题？</description>
+      <guid isPermaLink="true">https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10008-audio.wav</guid>
+      <enclosure url="https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10008-audio.wav" length="22126652" type="audio/mpeg" />
+    </item>
     <item>
       <title>领导者 - 印度需要打开空调</title>
       <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10007-audio.wav</link>
