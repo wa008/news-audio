@@ -43,11 +43,10 @@ def create_rss_feed(SOURCE_DIRECTORY_NAME, RSS_OUTPUT_FILE):
 
     # 4. Create an <item> element for each .wav file
     for wav_path in wav_files:
-        txt_path = os.path.join(SOURCE_DIRECTORY_NAME, wav_path.name.replace("audio.wav", "translated.txt"))
+        txt_path = wav_path.resolve()._str.replace("audio.wav", "translated.txt")
 
         # Get description (first line of the .txt file)
         item_description = f"Audio: {wav_path}" # Default description
-        print (txt_path)
         if os.path.exists(txt_path):
             try:
                 with open(txt_path, 'r', encoding='utf-8') as f:
@@ -62,7 +61,7 @@ def create_rss_feed(SOURCE_DIRECTORY_NAME, RSS_OUTPUT_FILE):
 
         # Construct file link
         # Link structure: URL_PREFIX + directory_name + / + file_name
-        file_link = f"{URL_PREFIX.rstrip('/')}/{SOURCE_DIRECTORY_NAME}/{wav_path.name}"
+        file_link = f"{URL_PREFIX.rstrip('/')}/{str(wav_path)}"
 
         # Get file size
         try:

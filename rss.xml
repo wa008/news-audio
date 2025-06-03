@@ -5,27 +5,27 @@
     <link>https://wa008.github.io/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 03 Jun 2025 04:34:41 -0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jun 2025 04:43:56 -0000</lastBuildDate>
     <item>
-      <title>Audio: the_economist/2025-05-31/10002-audio.wav</title>
-      <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/10002-audio.wav</link>
-      <description>Audio: the_economist/2025-05-31/10002-audio.wav</description>
-      <guid isPermaLink="true">https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/10002-audio.wav</guid>
-      <enclosure url="https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/10002-audio.wav" length="10908600" type="audio/mpeg" />
+      <title>本周要闻 - 商业</title>
+      <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10002-audio.wav</link>
+      <description>本周要闻 - 商业</description>
+      <guid isPermaLink="true">https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10002-audio.wav</guid>
+      <enclosure url="https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10002-audio.wav" length="10908600" type="audio/mpeg" />
     </item>
     <item>
-      <title>Audio: the_economist/2025-05-31/10001-audio.wav</title>
-      <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/10001-audio.wav</link>
-      <description>Audio: the_economist/2025-05-31/10001-audio.wav</description>
-      <guid isPermaLink="true">https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/10001-audio.wav</guid>
-      <enclosure url="https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/10001-audio.wav" length="15584304" type="audio/mpeg" />
+      <title>本周世界 - 政治</title>
+      <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10001-audio.wav</link>
+      <description>本周世界 - 政治</description>
+      <guid isPermaLink="true">https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10001-audio.wav</guid>
+      <enclosure url="https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10001-audio.wav" length="15584304" type="audio/mpeg" />
     </item>
     <item>
-      <title>Audio: the_economist/2025-05-24/10002-audio.wav</title>
-      <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/10002-audio.wav</link>
-      <description>Audio: the_economist/2025-05-24/10002-audio.wav</description>
-      <guid isPermaLink="true">https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/10002-audio.wav</guid>
-      <enclosure url="https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/10002-audio.wav" length="10772696" type="audio/mpeg" />
+      <title>本周世界 - 商业</title>
+      <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-24/10002-audio.wav</link>
+      <description>本周世界 - 商业</description>
+      <guid isPermaLink="true">https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-24/10002-audio.wav</guid>
+      <enclosure url="https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-24/10002-audio.wav" length="10772696" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
