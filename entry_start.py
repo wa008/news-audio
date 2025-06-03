@@ -32,7 +32,7 @@ def main():
     chattts_process_all_text_to_audio(path)
 
     # auto generate rss.xml 
-    create_rss_feed(path, "rss.xml")
+    create_rss_feed("the_economist", "rss.xml")
 
 if __name__ == "__main__":
     for i in range(1):
