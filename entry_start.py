@@ -7,7 +7,7 @@ import subprocess
 import os
 from utils import mkdir_path
 from tts_fishspeech import fish_process_all_text_to_audio
-from tts_gemini import gemini_process_all_text_to_audio # Doesn't support till now, to finish
+from tts_gemini import gemini_process_all_text_to_audio 
 from tts_chatts import chattts_process_all_text_to_audio
 from merge_audio import merge_sorted_audio_files
 from generate_rss_xml import create_rss_feed
@@ -29,7 +29,8 @@ def main():
     res = translate_text(path, api_key)
     if res == True: return 
 
-    chattts_process_all_text_to_audio(path)
+    # chattts_process_all_text_to_audio(path)
+    gemini_process_all_text_to_audio(path, api_key)
 
     # auto generate rss.xml 
     create_rss_feed("the_economist", "rss.xml")

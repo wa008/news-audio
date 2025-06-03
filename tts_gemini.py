@@ -18,13 +18,15 @@ def wave_file(filename, pcm, channels=1, rate=24000, sample_width=2):
       wf.setframerate(rate)
       wf.writeframes(pcm)
 
-def gemini_tts(client, user_input, output_file, max_attempts = 1):
+def gemini_tts(client, user_input, output_file, max_attempts = 50):
+    user_input = "demo"
     attempt_count = 0
     delay = 1
     while attempt_count < max_attempts:
         attempt_count += 1
         try:
-            contents = "Read this in chinese: ${user_input}"
+            contents = f"Read this in chinese: \n\n{user_input}"
+            print (f"contents: {contents}")
             MODEL_ID = "gemini-2.5-flash-preview-tts"
             response = client.models.generate_content(
                 model=MODEL_ID,
@@ -40,17 +42,28 @@ def gemini_tts(client, user_input, output_file, max_attempts = 1):
             )
             time.sleep(delay)
 
-def gemini_process_all_text_to_audio(datas, audio_path, api_key = 'default'):
-    mkdir_path(audio_path)
+def gemini_process_all_text_to_audio(path, api_key = 'default'):
+    flag = False
     client = genai.Client(api_key = api_key)
-    for index, data in enumerate(datas):
-        output_file = os.path.join(audio_path, f"audio_{index}.wav")
-        gemini_tts(client, data, output_file)
-        break 
+    for filename in sorted(os.listdir(path)):
+        if not filename.endswith("translated.txt"): continue
+        translated_file = os.path.join(path, filename)
+        audio_file = translated_file.replace("translated.txt", "audio.wav")
+        if os.path.exists(audio_file):
+            print (f"{audio_file} exists")
+            continue
+        text = open(translated_file, 'r').read()
+        flag = True
+        gemini_tts(client, text, audio_file)
+        break
+    if flag == False:
+        done_file = f"{path}/done"
+        with open(done_file, 'w') as f:
+            pass
+        print (f"Creat done file {done_file}")
 
 if __name__ == "__main__":
     # Example
-    datas = ["Say cheerfully: Have a wonderful day!"]
-    audio_path = "tmp_audio_output"
+    path = "./the_economist/2025-05-31"
     api_key = sys.argv[1] if len(sys.argv) > 1 else 'default'
-    gemini_process_all_text_to_audio(datas, audio_path, api_key)
+    gemini_process_all_text_to_audio(path, api_key)
