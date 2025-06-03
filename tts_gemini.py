@@ -19,7 +19,6 @@ def wave_file(filename, pcm, channels=1, rate=24000, sample_width=2):
       wf.writeframes(pcm)
 
 def gemini_tts(client, user_input, output_file, max_attempts = 50):
-    user_input = "demo"
     attempt_count = 0
     delay = 1
     while attempt_count < max_attempts:
