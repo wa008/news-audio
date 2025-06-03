@@ -90,13 +90,13 @@ def tts_one_file(text, audio_file):
 
     MAX_WORKERS = 1
     with concurrent.futures.ProcessPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        future_to_url = {executor.submit(text_to_audio, data, audio_path, index): index for index, data in enumerate(datas)}
+        future_to_url = {executor.submit(text_to_audio, data, audio_path, index): data for index, data in enumerate(datas)}
         for future in concurrent.futures.as_completed(future_to_url):
-            index = future_to_url[future]
+            res = future_to_url[future]
             try:
                 result = future.result()
             except Exception as exc:
-                print(f"[task {index}] error: {exc}")
+                print(f"[task {res}] error: {exc}")
 
     merge_sorted_audio_files(audio_path, audio_file)
 
