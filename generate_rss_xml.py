@@ -70,12 +70,18 @@ def create_rss_feed(SOURCE_DIRECTORY_NAME, RSS_OUTPUT_FILE):
             print(f"Warning: File {wav_path} not found while getting size, skipping this item.")
             continue
 
+        # Get date
+        date_str_from_path = str(wav_path).split('/')[-2]
+        dt_object = datetime.strptime(date_str_from_path, "%Y-%m-%d")
+        pub_date = dt_object.strftime("%a, %d %b %Y %H:%M:%S GMT")
+        print (f"pub_date: {pub_date}")
+
         # Create <item>
         item_element = ET.SubElement(channel_element, "item")
         ET.SubElement(item_element, "title").text = item_description
         ET.SubElement(item_element, "link").text = file_link # Can be the audio file link or a related webpage link
         ET.SubElement(item_element, "description").text = item_description
-        # ET.SubElement(item_element, "pubDate").text = pub_date
+        ET.SubElement(item_element, "pubDate").text = pub_date
         ET.SubElement(item_element, "guid", isPermaLink="true").text = file_link # GUID is usually a permalink
 
         # Add <enclosure> tag, used by podcast clients to identify the audio file
