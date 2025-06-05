@@ -35,6 +35,7 @@ def gemini_tts(client, user_input, output_file, max_attempts = 15):
             )
             data = response.candidates[0].content.parts[0].inline_data.data
             wave_file(output_file, data) # Saves the file to current directory
+            return 
         except Exception as e:
             delay *= 2
             print(
