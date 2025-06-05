@@ -5,7 +5,7 @@
     <link>https://wa008.github.io/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 05 Jun 2025 09:40:49 -0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Jun 2025 13:00:54 -0000</lastBuildDate>
     <item>
       <title>中国 - 中国疯狂的反向信用卡</title>
       <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10028-audio.wav</link>
@@ -77,6 +77,14 @@
       <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10020-audio.wav</guid>
       <enclosure url="https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10020-audio.wav" length="15715770" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>受邀专稿——卡尔·贝内迪克特·弗雷撰文：想摧毁美国商业？那就保护它</title>
+      <link>https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10009-audio.wav</link>
+      <description>受邀专稿——卡尔·贝内迪克特·弗雷撰文：想摧毁美国商业？那就保护它</description>
+      <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10009-audio.wav</guid>
+      <enclosure url="https://github.com/wa008/news-audio/raw/refs/heads/main/the_economist/2025-05-31/10009-audio.wav" length="15715770" type="audio/mpeg" />
     </item>
     <item>
       <title>信件 - 欧洲是否存在言论自由问题？</title>
