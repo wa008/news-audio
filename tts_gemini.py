@@ -25,6 +25,7 @@ def gemini_tts(client, user_input, output_file, max_attempts = 15):
         attempt_count += 1
         try:
             contents = f"Read this in chinese: \n\n{user_input}"
+            print (f"attempt_count: {attempt_count}")
             print (f"contents: {contents}")
             MODEL_ID = "gemini-2.5-flash-preview-tts"
             response = client.models.generate_content(
