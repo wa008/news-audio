@@ -5,7 +5,8 @@ from datetime import datetime, timezone, timedelta
 from email.utils import formatdate # For RFC 822 date formatting
 
 # --- Configuration Parameters ---
-URL_PREFIX = "https://github.com/wa008/news-audio/raw/refs/heads/main/"
+# URL_PREFIX = "https://github.com/wa008/news-audio/raw/refs/heads/main/"
+URL_PREFIX = "https://wa008.github.io/news-audio/"
 RSS_CHANNEL_TITLE = "中文外刊"
 RSS_CHANNEL_LINK = "https://wa008.github.io/news-audio/rss.xml" # Main link for the RSS channel
 RSS_CHANNEL_DESCRIPTION = "经济学人外刊音频，持续更新中"
