@@ -5,6 +5,7 @@ from parse_epub import parse_epub
 import sys 
 import subprocess
 import os
+import time 
 from utils import mkdir_path
 from tts_fishspeech import fish_process_all_text_to_audio
 from tts_gemini import gemini_process_all_text_to_audio 
@@ -21,6 +22,7 @@ def main():
     print (f"epub_file: {epub_file}")
     print (f"day: {day}")
     if flag == False: 
+        create_rss_feed("the_economist", "rss.xml")
         return 
     
     path = f"the_economist/{day}"
@@ -33,6 +35,7 @@ def main():
 
     # auto generate rss.xml 
     create_rss_feed("the_economist", "rss.xml")
+    time.sleep(600)
 
 if __name__ == "__main__":
     for i in range(1):
