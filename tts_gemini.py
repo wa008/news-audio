@@ -32,7 +32,7 @@ def gemini_tts(client, user_input, output_file, max_attempts = 12):
             print (f"contents: {contents}")
             print (f"length of contents: {len(contents)}")
             MODEL_ID = "gemini-2.5-flash-preview-tts"
-            if output_file == "the_economist/2025-06-14/10012-audio.wav":
+            if output_file == "the_economist/2025-06-14/10011-audio.wav":
                 return False
             response = client.models.generate_content(
                 model=MODEL_ID,
