@@ -8,7 +8,9 @@ from google.genai import types
 import wave 
 import time
 import sys
+import re
 from utils import mkdir_path
+from merge_audio import merge_sorted_audio_files
 
 # Set up the wave file to save the output:
 def wave_file(filename, pcm, channels=1, rate=24000, sample_width=2):
@@ -18,7 +20,7 @@ def wave_file(filename, pcm, channels=1, rate=24000, sample_width=2):
       wf.setframerate(rate)
       wf.writeframes(pcm)
 
-def gemini_tts(client, user_input, output_file, max_attempts = 15):
+def gemini_tts(client, user_input, output_file, max_attempts = 12):
     attempt_count = 0
     delay = 1
     while attempt_count < max_attempts:
@@ -27,24 +29,30 @@ def gemini_tts(client, user_input, output_file, max_attempts = 15):
             contents = f"Read this in chinese: \n\n{user_input}"
             print (f"attempt_count: {attempt_count}")
             print (f"contents: {contents}")
+            print (f"length of contents: {len(contents)}")
             MODEL_ID = "gemini-2.5-flash-preview-tts"
+            if output_file == "./the_economist/2025-06-14/10012-audio.wav":
+                return False
             response = client.models.generate_content(
                 model=MODEL_ID,
                 contents = contents,
                 config={"response_modalities": ['Audio']},
+                request_options={'timeout': 3600}, 
             )
             data = response.candidates[0].content.parts[0].inline_data.data
             wave_file(output_file, data) # Saves the file to current directory
-            return 
+            return True
         except Exception as e:
             delay *= 2
             print(
                 f"Translation failed due to {type(e).__name__}: {e} Will sleep {delay} seconds"
             )
             time.sleep(delay)
+    return False
 
 def gemini_process_all_text_to_audio(path, api_key = 'default'):
-    flag = False
+    tts_flag = False
+    success_flag = False
     client = genai.Client(api_key = api_key)
     for filename in sorted(os.listdir(path)):
         if not filename.endswith("translated.txt"): continue
@@ -54,17 +62,19 @@ def gemini_process_all_text_to_audio(path, api_key = 'default'):
             print (f"{audio_file} exists")
             continue
         text = open(translated_file, 'r').read()
-        flag = True
-        gemini_tts(client, text, audio_file)
+        tts_flag = True
+        success_flag = gemini_tts(client, text, audio_file)
         break
-    if flag == False:
+    if tts_flag == False:
         done_file = f"{path}/done"
         with open(done_file, 'w') as f:
             pass
         print (f"Creat done file {done_file}")
+        success_flag = True
+    return success_flag
 
 if __name__ == "__main__":
     # Example
-    path = "./the_economist/2025-05-31"
+    path = "./the_economist/2025-06-14"
     api_key = sys.argv[1] if len(sys.argv) > 1 else 'default'
     gemini_process_all_text_to_audio(path, api_key)

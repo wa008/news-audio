@@ -31,8 +31,10 @@ def main():
     
     res = translate_text(path, api_key)
     if res == False:
-        # chattts_process_all_text_to_audio(path)
-        gemini_process_all_text_to_audio(path, api_key)
+        success_flag = gemini_process_all_text_to_audio(path, api_key)
+        if success_flag == False:
+            print(f"Failed to process audio with Gemini TTS, trying FishSpeech TTS")
+            chattts_process_all_text_to_audio(path)
 
     # auto generate rss.xml 
     create_rss_feed("the_economist", "rss.xml")
