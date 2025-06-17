@@ -21,6 +21,7 @@ def wave_file(filename, pcm, channels=1, rate=24000, sample_width=2):
       wf.writeframes(pcm)
 
 def gemini_tts(client, user_input, output_file, max_attempts = 12):
+    print (f"output_file: {output_file}")
     attempt_count = 0
     delay = 1
     while attempt_count < max_attempts:
@@ -31,13 +32,13 @@ def gemini_tts(client, user_input, output_file, max_attempts = 12):
             print (f"contents: {contents}")
             print (f"length of contents: {len(contents)}")
             MODEL_ID = "gemini-2.5-flash-preview-tts"
-            if output_file == "./the_economist/2025-06-14/10012-audio.wav":
+            if output_file == "the_economist/2025-06-14/10012-audio.wav":
                 return False
             response = client.models.generate_content(
                 model=MODEL_ID,
                 contents = contents,
                 config={"response_modalities": ['Audio']},
-                request_options={'timeout': 3600}, 
+                # request_options={'timeout': 3600}, 
             )
             data = response.candidates[0].content.parts[0].inline_data.data
             wave_file(output_file, data) # Saves the file to current directory
