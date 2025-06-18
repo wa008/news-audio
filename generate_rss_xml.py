@@ -6,9 +6,9 @@ from email.utils import formatdate # For RFC 822 date formatting
 
 # --- Configuration Parameters ---
 # URL_PREFIX = "https://github.com/wa008/news-audio/raw/refs/heads/main/"
-URL_PREFIX = "https://wa008.github.io/news-audio/"
+URL_PREFIX = "https://informal.top/news-audio/"
 RSS_CHANNEL_TITLE = "中文外刊"
-RSS_CHANNEL_LINK = "https://wa008.github.io/news-audio/rss.xml" # Main link for the RSS channel
+RSS_CHANNEL_LINK = "https://informal.top/news-audio/rss.xml" # Main link for the RSS channel
 RSS_CHANNEL_DESCRIPTION = "经济学人外刊音频，持续更新中"
 # --- End of Configuration ---
 
@@ -30,6 +30,10 @@ def create_rss_feed(SOURCE_DIRECTORY_NAME, RSS_OUTPUT_FILE):
     ET.SubElement(channel_element, "lastBuildDate").text = formatdate(
         datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=8))).timestamp() # For Shanghai time zone
     )
+    # image 
+    podcast_image_url = f"{URL_PREFIX}/icon/TE.jpg"
+    image = ET.SubElement(channel_element, "image")
+    ET.SubElement(image, "url").text = podcast_image_url
 
     # 3. Find all .wav files and sort them by modification time in descending order
     wav_files = []
