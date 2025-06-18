@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 18 Jun 2025 02:49:51 -0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jun 2025 03:37:06 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>亚洲 - 印度真的能创新吗？</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-14/10021-audio.wav</link>
+      <description>亚洲 - 印度真的能创新吗？</description>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-14/10021-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-14/10021-audio.wav" length="21750038" type="audio/mpeg" />
+    </item>
     <item>
       <title>美洲 - 玻利维亚希望世界停止将古柯叶视为毒品</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-14/10020-audio.wav</link>
@@ -472,6 +480,14 @@
       <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-07/10031-audio.wav</guid>
       <enclosure url="https://informal.top/news-audio/the_economist/2025-06-07/10031-audio.wav" length="15715770" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>中东和非洲 - 非洲玩弄权术的老手</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-07/10030-audio.wav</link>
+      <description>中东和非洲 - 非洲玩弄权术的老手</description>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-07/10030-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-07/10030-audio.wav" length="15715770" type="audio/mpeg" />
     </item>
     <item>
       <title>中国 - 现在中国超廉价的电动汽车正在吓唬中国</title>
