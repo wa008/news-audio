@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 18 Jun 2025 03:37:06 -0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jun 2025 06:22:14 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>亚洲 - 印度能成为人工智能领域的赢家吗？</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-14/10022-audio.wav</link>
+      <description>亚洲 - 印度能成为人工智能领域的赢家吗？</description>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-14/10022-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-14/10022-audio.wav" length="14502592" type="audio/mpeg" />
+    </item>
     <item>
       <title>亚洲 - 印度真的能创新吗？</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-14/10021-audio.wav</link>
