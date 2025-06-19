@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 19 Jun 2025 01:36:17 -0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jun 2025 03:29:00 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>中东和非洲 - 哈马斯内部令人惊讶的权力转移</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-14/10030-audio.wav</link>
+      <description>中东和非洲 - 哈马斯内部令人惊讶的权力转移</description>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-14/10030-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-14/10030-audio.wav" length="17113530" type="audio/mpeg" />
+    </item>
     <item>
       <title>中东和非洲 - 流氓以色列正在武装起来对抗哈马斯</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-14/10029-audio.wav</link>
