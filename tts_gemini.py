@@ -41,7 +41,7 @@ def gemini_tts(client, user_input, output_file, max_attempts = 12):
                 model=MODEL_ID,
                 contents = contents,
                 config={"response_modalities": ['Audio']},
-                timeout = 1200,
+                # timeout = 1200,
                 # request_options={'timeout': 3600}, 
             )
             data = response.candidates[0].content.parts[0].inline_data.data
