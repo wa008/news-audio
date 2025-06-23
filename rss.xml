@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 23 Jun 2025 09:35:41 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jun 2025 09:54:48 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>本周要闻 - 政治</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-21/10001-audio.wav</link>
+      <description>本周要闻 - 政治</description>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-21/10001-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-21/10001-audio.wav" length="20245050" type="audio/mpeg" />
+    </item>
     <item>
       <title>中东和非洲 - 哈马斯内部令人惊讶的权力转移</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-14/10030-audio.wav</link>
