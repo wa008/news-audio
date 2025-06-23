@@ -9,8 +9,14 @@ import wave
 import time
 import sys
 import re
+import asyncio
+import signal
 from utils import mkdir_path
 from merge_audio import merge_sorted_audio_files
+
+def handler(signum, frame):
+    print("time out occurred!")
+    raise TimeoutError("Execution exceeded the set time limit")
 
 # Set up the wave file to save the output:
 def wave_file(filename, pcm, channels=1, rate=24000, sample_width=2):
@@ -20,29 +26,24 @@ def wave_file(filename, pcm, channels=1, rate=24000, sample_width=2):
       wf.setframerate(rate)
       wf.writeframes(pcm)
 
-def gemini_tts(client, user_input, output_file, max_attempts = 12):
+def gemini_tts(client, user_input, output_file, max_attempts = 6):
     print (f"output_file: {output_file}")
     attempt_count = 0
-    delay = 1
+    delay = 60
     while attempt_count < max_attempts:
         attempt_count += 1
+        signal.signal(signal.SIGALRM, handler)
+        signal.alarm(1200)  # 20 minutes timeout
         try:
             contents = f"Read this in chinese: \n\n{user_input}"
             print (f"attempt_count: {attempt_count}")
             print (f"contents: {contents}")
             print (f"length of contents: {len(contents)}")
             MODEL_ID = "gemini-2.5-flash-preview-tts"
-            if output_file in (
-                "the_economist/2025-06-14/10011-audio.wav", 
-                "the_economist/2025-06-14/10021-audio.wav", 
-            ):
-                return False
             response = client.models.generate_content(
                 model=MODEL_ID,
                 contents = contents,
                 config={"response_modalities": ['Audio']},
-                # timeout = 1200,
-                # request_options={'timeout': 3600}, 
             )
             data = response.candidates[0].content.parts[0].inline_data.data
             wave_file(output_file, data) # Saves the file to current directory
@@ -53,6 +54,9 @@ def gemini_tts(client, user_input, output_file, max_attempts = 12):
                 f"Translation failed due to {type(e).__name__}: {e} Will sleep {delay} seconds"
             )
             time.sleep(delay)
+            signal.alarm(0)
+        finally:
+            signal.alarm(0)
     return False
 
 def gemini_process_all_text_to_audio(path, api_key = 'default'):
@@ -80,6 +84,6 @@ def gemini_process_all_text_to_audio(path, api_key = 'default'):
 
 if __name__ == "__main__":
     # Example
-    path = "./the_economist/2025-06-14"
+    path = "./the_economist/2025-06-21"
     api_key = sys.argv[1] if len(sys.argv) > 1 else 'default'
     gemini_process_all_text_to_audio(path, api_key)
