@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Jun 2025 15:55:51 -0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 16:19:36 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>中东和非洲 - 苏丹战争正在蔓延至其边界之外</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-21/10031-audio.wav</link>
+      <description>中东和非洲 - 苏丹战争正在蔓延至其边界之外</description>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-21/10031-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-21/10031-audio.wav" length="12142650" type="audio/mpeg" />
+    </item>
     <item>
       <title>中东和非洲 - 在全球贸易战中，中国正试图赢得非洲的支持</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-21/10030-audio.wav</link>
