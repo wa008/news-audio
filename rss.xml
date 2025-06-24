@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Jun 2025 15:06:06 -0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 15:24:52 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>中国 - 富裕的中国城市正在扼杀贫穷的城市</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-21/10029-audio.wav</link>
+      <description>中国 - 富裕的中国城市正在扼杀贫穷的城市</description>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-21/10029-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-21/10029-audio.wav" length="13903290" type="audio/mpeg" />
+    </item>
     <item>
       <title>中国——中国消费者正在挥霍，但可能不会持续太久</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-21/10028-audio.wav</link>
