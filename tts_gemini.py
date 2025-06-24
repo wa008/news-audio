@@ -26,14 +26,14 @@ def wave_file(filename, pcm, channels=1, rate=24000, sample_width=2):
       wf.setframerate(rate)
       wf.writeframes(pcm)
 
-def gemini_tts(client, user_input, output_file, max_attempts = 6):
+def gemini_tts(client, user_input, output_file, max_attempts = 7):
     print (f"output_file: {output_file}")
     attempt_count = 0
     delay = 60
     while attempt_count < max_attempts:
         attempt_count += 1
         signal.signal(signal.SIGALRM, handler)
-        signal.alarm(1200)  # 20 minutes timeout
+        signal.alarm(600)  # 20 minutes timeout
         try:
             contents = f"Read this in chinese: \n\n{user_input}"
             print (f"attempt_count: {attempt_count}")
@@ -53,8 +53,8 @@ def gemini_tts(client, user_input, output_file, max_attempts = 6):
             print(
                 f"Translation failed due to {type(e).__name__}: {e} Will sleep {delay} seconds"
             )
-            time.sleep(delay)
             signal.alarm(0)
+            time.sleep(delay)
         finally:
             signal.alarm(0)
     return False
