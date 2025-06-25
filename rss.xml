@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Jun 2025 10:12:41 -0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jun 2025 10:29:33 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>金融与经济 - 投资者忽视改变世界的新闻。没错</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-21/10059-audio.wav</link>
+      <description>金融与经济 - 投资者忽视改变世界的新闻。没错</description>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-21/10059-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-21/10059-audio.wav" length="14053050" type="audio/mpeg" />
+    </item>
     <item>
       <title>金融与经济 - 以色列-伊朗战争对油价的影响</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-21/10058-audio.wav</link>
