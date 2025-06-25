@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Jun 2025 04:38:38 -0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jun 2025 04:56:38 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>商业 - 人工智能正在颠覆广告业务</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-21/10047-audio.wav</link>
+      <description>商业 - 人工智能正在颠覆广告业务</description>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-21/10047-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-21/10047-audio.wav" length="22401210" type="audio/mpeg" />
+    </item>
     <item>
       <title>在特朗普的世界里，推翻统治者是禁忌</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-21/10046-audio.wav</link>
