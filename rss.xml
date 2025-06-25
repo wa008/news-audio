@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Jun 2025 09:22:27 -0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jun 2025 09:38:06 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>日本痴迷于大米，米价已暴涨</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-21/10056-audio.wav</link>
+      <description>日本痴迷于大米，米价已暴涨</description>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-21/10056-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-21/10056-audio.wav" length="8431290" type="audio/mpeg" />
+    </item>
     <item>
       <title>日本财经——日本债务正在减少。但它的麻烦可能才刚刚开始</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-21/10055-audio.wav</link>
