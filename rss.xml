@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Jun 2025 23:02:17 -0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jun 2025 03:49:41 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>英国——奈杰尔·法拉奇的崛起</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-21/10044-audio.wav</link>
+      <description>英国——奈杰尔·法拉奇的崛起</description>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-21/10044-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-21/10044-audio.wav" length="15936974" type="audio/mpeg" />
+    </item>
     <item>
       <title>英国——性侵团伙丑闻是英国政府的污点</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-21/10043-audio.wav</link>
