@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 28 Jun 2025 04:52:01 -0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jun 2025 10:23:16 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>简报 - 乌克兰战争表明西方可以在不重新工业化的情况下重新武装</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-28/10012-audio.wav</link>
+      <description>简报 - 乌克兰战争表明西方可以在不重新工业化的情况下重新武装</description>
+      <pubDate>Sat, 28 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-28/10012-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-28/10012-audio.wav" length="39617396" type="audio/mpeg" />
+    </item>
     <item>
       <title>简报 - 美国的炸弹对伊朗核计划造成了多大的损害？</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-28/10011-audio.wav</link>
