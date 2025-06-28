@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 28 Jun 2025 14:22:11 -0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jun 2025 14:39:12 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>亚洲 - 日本关于姓氏的内战</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-28/10026-audio.wav</link>
+      <description>亚洲 - 日本关于姓氏的内战</description>
+      <pubDate>Sat, 28 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-28/10026-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-28/10026-audio.wav" length="13571130" type="audio/mpeg" />
+    </item>
     <item>
       <title>亚洲 - 亚洲蒙羞的圣人</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-28/10025-audio.wav</link>
