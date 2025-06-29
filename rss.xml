@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 29 Jun 2025 11:31:37 -0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Jun 2025 12:01:28 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>商业 - 在人工智能时代，谁还需要埃森哲？</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-28/10055-audio.wav</link>
+      <description>商业 - 在人工智能时代，谁还需要埃森哲？</description>
+      <pubDate>Sat, 28 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-28/10055-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-28/10055-audio.wav" length="19478970" type="audio/mpeg" />
+    </item>
     <item>
       <title>商业 - 会议座谈的三条规则</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-28/10054-audio.wav</link>
