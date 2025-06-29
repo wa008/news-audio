@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 29 Jun 2025 10:22:24 -0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Jun 2025 10:39:50 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>商业 - OnlyFans如何改变了色情行业</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-28/10051-audio.wav</link>
+      <description>商业 - OnlyFans如何改变了色情行业</description>
+      <pubDate>Sat, 28 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-28/10051-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-28/10051-audio.wav" length="17695290" type="audio/mpeg" />
+    </item>
     <item>
       <title>商业 - AI 估值已近乎疯狂</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-28/10050-audio.wav</link>
