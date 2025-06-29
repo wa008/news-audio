@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 29 Jun 2025 17:49:49 -0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Jun 2025 18:06:21 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>金融与经济 - Jane Street隐蔽的留人策略</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-28/10057-audio.wav</link>
+      <description>金融与经济 - Jane Street隐蔽的留人策略</description>
+      <pubDate>Sat, 28 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-28/10057-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-28/10057-audio.wav" length="9681210" type="audio/mpeg" />
+    </item>
     <item>
       <title>金融与经济 - 如何避免股票税</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-28/10056-audio.wav</link>
