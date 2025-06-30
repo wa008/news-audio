@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 30 Jun 2025 10:35:38 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Jun 2025 10:53:55 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>文化 - 如何免费听到好莱坞明星唱歌</title>
+      <link>https://informal.top/news-audio/the_economist/2025-06-28/10068-audio.wav</link>
+      <description>文化 - 如何免费听到好莱坞明星唱歌</description>
+      <pubDate>Sat, 28 Jun 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-06-28/10068-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-06-28/10068-audio.wav" length="16422330" type="audio/mpeg" />
+    </item>
     <item>
       <title>文化 - 一家新的荷兰博物馆通过艺术探讨移民问题</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-28/10067-audio.wav</link>
