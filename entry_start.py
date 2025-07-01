@@ -23,7 +23,7 @@ def main():
     print (f"day: {day}")
     if flag == False: 
         create_rss_feed("the_economist", "rss.xml")
-        time.sleep(600)
+        time.sleep(1200)
         return 
     
     path = f"the_economist/{day}"
