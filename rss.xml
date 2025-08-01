@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Aug 2025 01:21:38 -0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Aug 2025 01:50:52 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>本周世界 - 政治</title>
+      <link>https://informal.top/news-audio/the_economist/2025-07-26/10001-audio.wav</link>
+      <description>本周世界 - 政治</description>
+      <pubDate>Sat, 26 Jul 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-07-26/10001-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-07-26/10001-audio.wav" length="18342330" type="audio/mpeg" />
+    </item>
     <item>
       <title>讣告 - Violeta Chamorro首先是一位母亲，其次才是一位统治者</title>
       <link>https://informal.top/news-audio/the_economist/2025-06-28/10070-audio.wav</link>
