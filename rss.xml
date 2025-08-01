@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Aug 2025 17:57:36 -0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Aug 2025 18:27:09 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>美国 - 与美国核导弹部队一起的地下生活</title>
+      <link>https://informal.top/news-audio/the_economist/2025-07-26/10012-audio.wav</link>
+      <description>美国 - 与美国核导弹部队一起的地下生活</description>
+      <pubDate>Sat, 26 Jul 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-07-26/10012-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-07-26/10012-audio.wav" length="21032250" type="audio/mpeg" />
+    </item>
     <item>
       <title>简报 - 如果人工智能使世界经济增长爆炸式增长会怎样？</title>
       <link>https://informal.top/news-audio/the_economist/2025-07-26/10011-audio.wav</link>
