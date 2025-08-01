@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Aug 2025 11:14:10 -0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Aug 2025 11:58:54 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>简报 - 人工智能实验室孤注一掷的竞赛没有时间顾及安全</title>
+      <link>https://informal.top/news-audio/the_economist/2025-07-26/10010-audio.wav</link>
+      <description>简报 - 人工智能实验室孤注一掷的竞赛没有时间顾及安全</description>
+      <pubDate>Sat, 26 Jul 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-07-26/10010-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-07-26/10010-audio.wav" length="31444410" type="audio/mpeg" />
+    </item>
     <item>
       <title>应邀稿件 - 联合国难民事务主管表示，庇护制度应该修复，而不是废弃</title>
       <link>https://informal.top/news-audio/the_economist/2025-07-26/10009-audio.wav</link>
