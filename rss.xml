@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Aug 2025 21:12:49 -0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Aug 2025 02:11:11 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>美洲——特朗普对巴西的惊人打击</title>
+      <link>https://informal.top/news-audio/the_economist/2025-07-26/10018-audio.wav</link>
+      <description>美洲——特朗普对巴西的惊人打击</description>
+      <pubDate>Sat, 26 Jul 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-07-26/10018-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-07-26/10018-audio.wav" length="15090358" type="audio/mpeg" />
+    </item>
     <item>
       <title>美国——对唐纳德·特朗普来说，略带诗意的公正</title>
       <link>https://informal.top/news-audio/the_economist/2025-07-26/10017-audio.wav</link>
