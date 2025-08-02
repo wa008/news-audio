@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 02 Aug 2025 09:25:14 -0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Aug 2025 09:52:30 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>简报 - 美国正在大幅削减其气候研究</title>
+      <link>https://informal.top/news-audio/the_economist/2025-08-02/10009-audio.wav</link>
+      <description>简报 - 美国正在大幅削减其气候研究</description>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-08-02/10009-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-08-02/10009-audio.wav" length="7571130" type="audio/mpeg" />
+    </item>
     <item>
       <title>简报 - 唐纳德·特朗普对可再生能源的战争</title>
       <link>https://informal.top/news-audio/the_economist/2025-08-02/10008-audio.wav</link>
