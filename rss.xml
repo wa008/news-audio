@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 02 Aug 2025 02:48:25 -0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Aug 2025 03:16:14 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>本周全球要闻——商业</title>
+      <link>https://informal.top/news-audio/the_economist/2025-08-02/10001-audio.wav</link>
+      <description>本周全球要闻——商业</description>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-08-02/10001-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-08-02/10001-audio.wav" length="13901370" type="audio/mpeg" />
+    </item>
     <item>
       <title>美洲——特朗普对巴西的惊人打击</title>
       <link>https://informal.top/news-audio/the_economist/2025-07-26/10018-audio.wav</link>
