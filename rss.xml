@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 02 Aug 2025 18:56:39 -0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Aug 2025 19:55:37 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>美国 - 模块化房屋正在帮助洛杉矶的野火幸存者重建家园</title>
+      <link>https://informal.top/news-audio/the_economist/2025-08-02/10013-audio.wav</link>
+      <description>美国 - 模块化房屋正在帮助洛杉矶的野火幸存者重建家园</description>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-08-02/10013-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-08-02/10013-audio.wav" length="16028730" type="audio/mpeg" />
+    </item>
     <item>
       <title>美国 - 美国太空司令部正准备进行卫星间的战斗</title>
       <link>https://informal.top/news-audio/the_economist/2025-08-02/10012-audio.wav</link>
