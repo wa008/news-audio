@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 03 Aug 2025 10:53:04 -0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Aug 2025 11:23:43 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>在中国快递大战的怒火中，人人皆输</title>
+      <link>https://informal.top/news-audio/the_economist/2025-08-02/10026-audio.wav</link>
+      <description>在中国快递大战的怒火中，人人皆输</description>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-08-02/10026-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-08-02/10026-audio.wav" length="27445050" type="audio/mpeg" />
+    </item>
     <item>
       <title>中国——退休金领取者能否拯救中国经济？</title>
       <link>https://informal.top/news-audio/the_economist/2025-08-02/10025-audio.wav</link>
