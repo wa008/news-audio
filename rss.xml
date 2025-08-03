@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 03 Aug 2025 00:48:16 -0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Aug 2025 01:17:53 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>美国——唐纳德·特朗普在教哈佛什么</title>
+      <link>https://informal.top/news-audio/the_economist/2025-08-02/10015-audio.wav</link>
+      <description>美国——唐纳德·特朗普在教哈佛什么</description>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-08-02/10015-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-08-02/10015-audio.wav" length="18565050" type="audio/mpeg" />
+    </item>
     <item>
       <title>美国 - 芝加哥的职业摔跤手谈论美国</title>
       <link>https://informal.top/news-audio/the_economist/2025-08-02/10014-audio.wav</link>
