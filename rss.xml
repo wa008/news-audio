@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 03 Aug 2025 15:12:29 -0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Aug 2025 15:40:00 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>欧洲——越来越多的乌克兰女性加入军队</title>
+      <link>https://informal.top/news-audio/the_economist/2025-08-02/10035-audio.wav</link>
+      <description>欧洲——越来越多的乌克兰女性加入军队</description>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-08-02/10035-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-08-02/10035-audio.wav" length="10658490" type="audio/mpeg" />
+    </item>
     <item>
       <title>欧洲——拦截无人机能阻止俄罗斯的恐怖轰炸吗？</title>
       <link>https://informal.top/news-audio/the_economist/2025-08-02/10034-audio.wav</link>
