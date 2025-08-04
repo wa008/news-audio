@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Aug 2025 01:09:32 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Aug 2025 01:45:52 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>英国——斯塔默的巴勒斯坦问题</title>
+      <link>https://informal.top/news-audio/the_economist/2025-08-02/10045-audio.wav</link>
+      <description>英国——斯塔默的巴勒斯坦问题</description>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-08-02/10045-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-08-02/10045-audio.wav" length="19546170" type="audio/mpeg" />
+    </item>
     <item>
       <title>英国——英格兰女子足球队将胜利带回家</title>
       <link>https://informal.top/news-audio/the_economist/2025-08-02/10044-audio.wav</link>
