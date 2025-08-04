@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Aug 2025 11:24:04 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Aug 2025 11:53:03 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>金融与经济 - 谁在承受特朗普关税之痛？</title>
+      <link>https://informal.top/news-audio/the_economist/2025-08-02/10055-audio.wav</link>
+      <description>金融与经济 - 谁在承受特朗普关税之痛？</description>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-08-02/10055-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-08-02/10055-audio.wav" length="19834170" type="audio/mpeg" />
+    </item>
     <item>
       <title>商业 - 谁将为万亿美元的人工智能繁荣买单？</title>
       <link>https://informal.top/news-audio/the_economist/2025-08-02/10054-audio.wav</link>
