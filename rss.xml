@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Aug 2025 07:45:42 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Aug 2025 08:13:58 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>国际观察 - 中国能拯救南非于唐纳德·特朗普之手吗？</title>
+      <link>https://informal.top/news-audio/the_economist/2025-08-02/10048-audio.wav</link>
+      <description>国际观察 - 中国能拯救南非于唐纳德·特朗普之手吗？</description>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-08-02/10048-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-08-02/10048-audio.wav" length="19413690" type="audio/mpeg" />
+    </item>
     <item>
       <title>国际 - 人工智能会影响选举结果吗？</title>
       <link>https://informal.top/news-audio/the_economist/2025-08-02/10047-audio.wav</link>
