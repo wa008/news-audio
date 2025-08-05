@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 05 Aug 2025 02:05:31 -0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Aug 2025 02:32:49 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>科学与技术 - 你能克服过敏吗？</title>
+      <link>https://informal.top/news-audio/the_economist/2025-08-02/10065-audio.wav</link>
+      <description>科学与技术 - 你能克服过敏吗？</description>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-08-02/10065-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-08-02/10065-audio.wav" length="11583930" type="audio/mpeg" />
+    </item>
     <item>
       <title>科学技术 - 如何建造一艘用于星际旅行的飞船</title>
       <link>https://informal.top/news-audio/the_economist/2025-08-02/10064-audio.wav</link>
