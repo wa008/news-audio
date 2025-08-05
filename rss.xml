@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 05 Aug 2025 00:58:30 -0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Aug 2025 01:30:46 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>科学家希望对地球上所有的动物、真菌和植物进行测序</title>
+      <link>https://informal.top/news-audio/the_economist/2025-08-02/10063-audio.wav</link>
+      <description>科学家希望对地球上所有的动物、真菌和植物进行测序</description>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-08-02/10063-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-08-02/10063-audio.wav" length="16800570" type="audio/mpeg" />
+    </item>
     <item>
       <title>中国科技：中国拥有顶尖的人工智能模型，但运行这些模型却面临挑战</title>
       <link>https://informal.top/news-audio/the_economist/2025-08-02/10062-audio.wav</link>
