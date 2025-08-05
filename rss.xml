@@ -5,10 +5,18 @@
     <link>https://informal.top/news-audio/rss.xml</link>
     <description>经济学人外刊音频，持续更新中</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Aug 2025 19:38:35 -0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Aug 2025 00:30:38 -0000</lastBuildDate>
     <image>
       <url>https://informal.top/news-audio//icon/TE.jpg</url>
     </image>
+    <item>
+      <title>金融与经济 - 日本的交易机器开始加速运转</title>
+      <link>https://informal.top/news-audio/the_economist/2025-08-02/10061-audio.wav</link>
+      <description>金融与经济 - 日本的交易机器开始加速运转</description>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://informal.top/news-audio/the_economist/2025-08-02/10061-audio.wav</guid>
+      <enclosure url="https://informal.top/news-audio/the_economist/2025-08-02/10061-audio.wav" length="12333160" type="audio/mpeg" />
+    </item>
     <item>
       <title>金融与经济 - 银行业撤退的更深层原因</title>
       <link>https://informal.top/news-audio/the_economist/2025-08-02/10060-audio.wav</link>
